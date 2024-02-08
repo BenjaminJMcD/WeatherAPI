@@ -1,1 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Arvo', serif;
+}
+
+.header {
+    height: 200px;
+    background-color: blue;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.header h1 {
+    margin-top: 0;
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+
+.searchTitle {
+    font-size: 30px;
+    align-self: center;
+    margin-right: 10px;
+}
+
+#searchBar {
+    display:flex;
+    justify-content:center;
+    height: 20px;
+}
+
+#searchBtn {
+    height: 30px;
+    align-self: center;
+}
+
+#cityInput {
+    height: 25px;
+    width: 300px;
+    align-self: center;
+    margin-right: 10px;
+}
+
+/* CURRENT WEATHER CARD */
+
+#current {
+    height: 400px;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    border: solid black;
+}
+
+#city {
+    font-size: 28px;
+    text-align:center;
+    margin-bottom: 0;
+}
+
+#conditionImg-current {
+    height: 140px;
+    width: 140px;
+    margin-left: 80px;
+}
+
+#condition-current {
+    text-align:center;
+    margin: 0px;
+}
+
+#temp-current {
+    font-size: 48px;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align:center;
+}
+
+/* EXTRA BITS */
+
+.extraBits {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    width: 300px;
+    height: 60px;
+    justify-content: space-around;
+    text-align: center;
+    margin:auto;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 20px;
+    height: 60px;
+}
+
+.box2 {
+    height: 60px;
+}
+
+.icon {
+    grid-area: 1 / 1 / 2 / 2;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.extraText {
+    grid-area: 2 / 1 / 3 / 2;
+    font-size: 12px;
+    margin: 0;
+    margin-left: 4px;
+
+}
+
+.feelsLikeText {
+    font-size: 12px;
+    margin-bottom: 1px;
+    margin-top: 0px;
+}
+
+#feelsLikeTemp {
+    font-size: 24px;
+    margin:0;
+}
+
+#humidity {
+    grid-area: 1 / 2 / 3 / 3;
+    font-size: 24px;
+    margin:auto;
+}
+
+#wind {
+    grid-area: 1 / 2 / 3 / 3;
+    font-size: 24px;
+    margin:auto;
+    margin-right: 4px;
+}
