@@ -140,3 +140,30 @@ body {
     margin:auto;
     margin-right: 4px;
 }
+
+/* FORECAST */
+
+.dates {
+    display:flex;
+    justify-content: space-around;
+}
+
+.forecastBar {
+    display: flex;
+    justify-content:space-around;
+}
+
+.forecast {
+    display: flex;
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#min1, #min2 {
+    margin-right: 20px;
+}
+
+#img1, #img2 {
+    height: 50px;
+}
