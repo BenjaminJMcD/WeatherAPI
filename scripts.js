@@ -25,7 +25,7 @@ const wind = document.getElementById("wind");
 
 async function getWeather(location) {
 
-    const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=1b39ce7977d24e5bb6a183739240202&q=${location}`, {mode:'cors'})
+    const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=1b39ce7977d24e5bb6a183739240202&q=${location}`, {mode:'cors'})
 
     const info = await response.json();
 
@@ -53,7 +53,7 @@ const cond2 = document.getElementById("condText2");
 
 async function getForecast(location) {
 
-    const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=1b39ce7977d24e5bb6a183739240202&q=${location}&days=3`, {mode:'cors'})
+    const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=1b39ce7977d24e5bb6a183739240202&q=${location}&days=3`, {mode:'cors'})
 
     const info = await response.json();
 
